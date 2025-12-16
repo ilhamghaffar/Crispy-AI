@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy IA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stm/Kentang goreng.css">
+</head>
+<style>
+    img {
+        display: block;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+</style>
+
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="tentang-kami.html">
+                <i class="bi bi-lightning-charge-fill"></i> Crispy IA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang-kami.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="tentang-kami" class="py-5">
+        <div class="container">
+            <!-- Bagian Cerita -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img src="stm/kedai kentang goreng.jpg"
+                        alt="Tentang Kami" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-5">
+                    <h2 class="display-5 fw-bold mb-4">Cerita Kami</h2>
+                    <p class="lead">Berawal dari dapur kecil dan hasrat besar untuk menciptakan camilan sempurna,
+                        CrispyIA lahir. Kami percaya bahwa kentang goreng yang enak adalah kombinasi dari kentang
+                        berkualitas, teknik yang tepat, dan tentu saja, cinta.</p>
+                    <p>Setiap batch kentang goreng kami adalah bukti komitmen kami untuk memberikan yang terbaik, dari
+                        kebun ke meja makan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+            <!-- Bagian Misi & Visi -->
+            <div class="row text-center mb-5 content-block">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="card-body">
+                            <i class="bi bi-bullseye text-warning display-4 mb-3"></i>
+                            <h3 class="card-title fw-bold">Misi Kami</h3>
+                            <p class="card-text">Menjadi pilihan utama camilan kentang goreng di setiap kesempatan,
+                                dengan selalu mengutamakan kualitas, rasa, dan kepuasan pelanggan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="card-body">
+                            <i class="bi bi-eye text-warning display-4 mb-3"></i>
+                            <h3 class="card-title fw-bold">Visi Kami</h3>
+                            <p class="card-text">Menghadirkan kebahagiaan dan keceriaan dalam setiap gigitan kentang
+                                goreng CrispyFry ke seluruh Indonesia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bagian Tim -->
+            <div class="text-center content-block">
+                <h2 class="display-5 fw-bold mb-4">Tim di Balik CrispyIA</h2>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <img src="stm/owner.jpg" alt="Team Member"
+                            class="img-fluid rounded-circle mb-3 shadow">
+                        <h5>Ilham Ghaffar A</h5>
+                        <p class="text-muted">Head Chef & Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let rating = 4;
+        if (rating >= 4.5) {
+            document.getElementById("hasil-rating").textContent = "★★★★★ Sangat Disarankan";
+        } else if (rating >= 3) {
+            document.getElementById("hasil-rating").textContent = "★★★ Rekomendasi Biasa";
+        } else {
+            document.getElementById("hasil-rating").textContent = "★ Tidak Direkomendasikan";
+        }
+    </script>
+
+    <h3>Layanan Unggulan:</h3>
+    <ul id="layanan-list"></ul>
+    <script>
+        let layanan = ["Gratis Ongkir", "Bayar di Tempat", "Garansi 30 Hari"];
+        layanan.forEach(function (item) {
+            let li = document.createElement("li");
+            li.textContent = item;
+            document.getElementById("layanan-list").appendChild(li);
+        });
+    </script>
+    <h3>Kunjungi kami</h3>
+    <p><a href="https://instagram.com/Hammzqt" target="_blank">instagram Kentang Goreng Crispy Hans</a></p>
+    <p><a href="https://tiktok.com/Roro Joro" target="_blank">tiktok Kentang Goreng Crispy Hans</a></p>
+    <div style="padding:20px; max-width:900px; margin:auto; text-align:center;">
+        <p>Crispy AI adalah inovasi kuliner masa depan yang menggabungkan makanan favorit semua orang — KENTANG GORENG — dengan kecerdasan buatan. Setiap potong kentang diproses, diolah, dan digoreng menggunakan algoritma crispness-level untuk menghasilkan kerenyahan sempurna.</p>
+        <p>Dari Original hingga varian pedas, semua dibuat presisi oleh teknologi.</p>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Crispy IA. Semua hak cipta dilindungi.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="file.js/script.js"></script>
+</body>
+
+</html>
